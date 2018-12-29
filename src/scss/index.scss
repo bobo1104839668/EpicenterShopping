@@ -291,7 +291,7 @@ article{
 					color: white;
 				}
 			}
-			& li:nth-last-child(){
+			& li:nth-child(10){
 				border-bottom: 0px;
 			}
 		}
