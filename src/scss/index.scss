@@ -274,6 +274,15 @@ article{
 		& section:nth-of-type(1){
 			margin-left: 186px;
 		}
+		& .nav{
+			width: 1028px;
+			height: 478px;
+			background: white;
+			position: absolute;
+			top: 0px;
+			z-index: -1;
+			left: 174px;
+		}
 		& ul{
 			background: #343a3a;
 			padding: 8px 17px 13px 10px;
@@ -306,6 +315,28 @@ article{
 			height: 415px;
 			padding-left: 172px;
 			display: flex;
+			& section{
+				position: relative;
+			}
+			& section a{
+				display: block;
+				opacity: 0;
+				position: absolute;
+				width: 25px;
+				height: 50px;
+				background: url("../../img/index_img/slider-arrow.png");
+				background-color: #000000;
+			}
+			& section a:nth-child(2){
+				background-position: 108px 42px;
+				left: 0px;
+				top: 178px;
+			}
+			& section a:nth-child(3){
+				background-position: 226px 42px;
+				left: 757px;
+				top: 178px;
+			}
 			& img{
 				height: 400px;
 			}
