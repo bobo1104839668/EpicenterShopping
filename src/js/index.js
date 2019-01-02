@@ -3,15 +3,26 @@ require.config({
 	"paths" : {
 		"jquery" : "jquery-1.11.3",
 		"cookie" : "jquery.cookie",
-		"slide" : "slide"
+		"slide" : "slide",
+		"nav" : "nav",
+		"sample" : "sample",
+		"login" : "login",
+		"cookies" : "cookie",
+		"registor" : "registor"
 	}
 })
 
 //导入
-require(['jquery','cookie',"slide"],function($,cookie,slide){
+require(['jquery','cookie',"slide","nav","sample","login","cookies","registor"],function($,cookie,slide,nav,sample,login,cookies,registor){
 	$(function(){
-		// $('body').append("<h1>一级标题</h1>")
 		let section = $("div.banner").children()[0];
-		slide(section);
+		// slide(section);
+		nav.nav("ul");
+		sample.sample("sample");
+		console.log(1);
+		registor.registor();
+		if(login){
+			location.href = "../html/index.html";
+		};
 	})
 })

@@ -274,29 +274,91 @@ article{
 		& section:nth-of-type(1){
 			margin-left: 186px;
 		}
-		& .nav{
+		& .divsss{
 			width: 1028px;
 			height: 478px;
+			display: flex;
+			justify-content: space-between;
 			background: white;
 			position: absolute;
 			top: 0px;
 			z-index: -1;
 			left: 174px;
+			& .bb{
+				height: 430px;
+				width: 780px;
+				border-right: 1px solid #ece2e2;
+				& .nava{
+					display: flex;	
+					align-items: center;
+					& p{
+						margin-top: 8px;
+						height: 30px;
+						line-height: 30px;
+						display: flex;
+						width: 100px;
+						justify-content: flex-end;
+						align-items: center;
+						margin-right: 10px;
+						& a{
+							color: black;
+							font-size: 13px;
+							padding: 0 5px;
+							height: 14px;
+							line-height: 14px;
+							font-weight: 600;
+						}
+						& span{
+							display: block;
+							color: #757575;
+							font-size: 12px;
+						}
+					}
+					& .ulsss{
+						display: flex;
+						align-items: center;
+						width: 688px;
+						padding: 12px 0;
+						border-bottom: 1px solid #ece2e2;
+						& li a{
+							color: #757575;
+							font-size: 12px;
+							padding: 0 10px;
+							height: 14px;
+							display: block;
+							border-left: 1px solid #ece2e2;
+						}
+					}
+				}
+			}
+			& .imgs{
+				width: 245px;
+				height: 780px;
+				& p{
+					border-bottom: 1px solid #ece2e2;
+					height: 151px;
+					& img{
+						margin: 2px;
+					}
+				}
+				& p:nth-child(3){
+					border: 0;
+				}
+			}
 		}
-		& ul{
-			background: #343a3a;
-			padding: 8px 17px 13px 10px;
+		& #ul{
 			position: absolute;
 			left: 0;
-			width: 145px;
-			tab-size: 0;
+			width: 172px;
 			& li{
 				height: 45px;
-				color: #454b4b;
+				text-indent: 10px;
+				background: #343a3a;
+				color: #5d7171;
 				line-height: 45px;
 				border-bottom: 1px dashed #454b4b;
 				& a{
-					font-size: $baseFontSize;
+					font-size: 14px;
 					color: white;
 				}
 			}

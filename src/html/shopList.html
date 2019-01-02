@@ -57,17 +57,68 @@
 				<a href="#">米面杂粮</a>
 			</div>
 			<div class="list">
-				<p>分类- <span>"米面杂粮"</span> 筛选结果</p>
-				<p>
+				<p>分类- <span id = "type">米面粮油</span> 筛选结果</p>
+				<div>
 					<span>品牌：</span>
 					<ul>
-						<li><a href="#"><img src="../../img/shopList_img/" ></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
+						<li><a href="#"><img src="../../img/index_img/logo24.jpg" ></a></li>
+						<li><a href="#"><img src="../../img/index_img/logo25.jpg" ></a></li>
+						<li><a href="#"><img src="../../img/index_img/logo27.jpg" ></a></li>
+						<li><a href="#"><img src="../../img/index_img/logo25.jpg" ></a></li>
+						<li><a href="#"><img src="../../img/index_img/logo24.jpg" ></a></li>
 					</ul>
-				</p>
+					<input type="button" id = "selects" value = "+多选">
+				</div>
+				<div class="navv">
+					<span>价格：</span>
+					<ul>
+						<li><a href="#">0-68</a></li>
+						<li><a href="#">0-68</a></li>
+						<li><a href="#">0-68</a></li>
+						<li><a href="#">0-68</a></li>
+						<li><a href="#">0-68</a></li>
+						<li><a href="#">0-68</a></li>
+					</ul>
+					<input type="button" id = "selects" value = "+多选">
+				</div>
+				<div class="navv">
+					<span>产地：</span>
+					<ul>
+						<li><a href="#">中国大陆</a></li>
+						<li><a href="#">意大利</a></li>
+						<li><a href="#">法国</a></li>
+						<li><a href="#">德国</a></li>
+						<li><a href="#">美国</a></li>
+						<li><a href="#">其他</a></li>
+					</ul>
+					<input type="button" id = "selects" value = "+多选">
+				</div>
+				<div class="navv navs">
+					<span>包装单位：</span>
+					<ul>
+						<li><a href="#">桶装</a></li>
+						<li><a href="#">袋装</a></li>
+						<li><a href="#">盒装</a></li>
+						<li><a href="#">其他</a></li>
+					</ul>
+					<input type="button" id = "selects" value = "+多选">
+					<p>更多选项</p>
+				</div>
+			</div>
+			<div class="list1">
+				<ul>
+					<li>默认排序</li>
+					<li>成交量</li>
+					<li>价格</li>
+					<li>评论</li>
+					<li>
+						<input type="text" name="low" id="low" value="最低价" >-
+						<input type="text" name="high" id="high" value="最高价" >
+					</li>
+					<li>经营类型</li>
+					<li>促销活动</li>
+					<li><input type="checkbox" name="boxs">赠品</li>
+				</ul>
 			</div>
 		</article>
 		<div class="advice">
@@ -165,6 +216,16 @@
 			</ul>
 		</footer>
 		<script src="../js/jquery-1.11.3.js"></script>
-		<!-- <script src="../js/bootstrap.min.js"></script> -->
+		<script type="text/javascript">
+			$().ready(function(){
+				function GetQueryString(name){
+				     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+				     var r = window.location.search.substr(1).match(reg);
+				     if(r!=null)return  unescape(r[2]); return null;
+				}
+				var type = GetQueryString("type");
+				$("#type").html(decodeURI(type));
+			})
+		</script>
 	</body>
 </html>
