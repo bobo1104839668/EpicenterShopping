@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>首页</title>
+		<title>商品列表</title>
 		<script src="../js/require.js" data-main = "../require/index" defer async = "true"></script>
 		<link href="../../dist/css/shopList.min.css" rel="stylesheet" />
 	</head>
@@ -60,11 +60,11 @@
 				<p>分类- <span id = "type">米面粮油</span> 筛选结果</p>
 				<div>
 					<span>品牌：</span>
-					<ul>
-						<li><a href="#"><img src="../../img/index_img/logo24.jpg" ></a></li>
-						<li><a href="#"><img src="../../img/index_img/logo25.jpg" ></a></li>
-						<li><a href="#"><img src="../../img/index_img/logo27.jpg" ></a></li>
-						<li><a href="#"><img src="../../img/index_img/logo25.jpg" ></a></li>
+					<ul id="ul3">
+						<li><a href="#"><img src="../../img/shopList_img/logo.jpg" ></a></li>
+						<li><a href="#"><img src="../../img/shopList_img/logo1.jpg" ></a></li>
+						<li><a href="#"><img src="../../img/shopList_img/logo2.jpg" ></a></li>
+						<li><a href="#"><img src="../../img/shopList_img/logo3.jpg" ></a></li>
 						<li><a href="#"><img src="../../img/index_img/logo24.jpg" ></a></li>
 					</ul>
 					<input type="button" id = "selects" value = "+多选">
@@ -93,7 +93,7 @@
 					</ul>
 					<input type="button" id = "selects" value = "+多选">
 				</div>
-				<div class="navv navs">
+				<div class="navv">
 					<span>包装单位：</span>
 					<ul>
 						<li><a href="#">桶装</a></li>
@@ -102,7 +102,9 @@
 						<li><a href="#">其他</a></li>
 					</ul>
 					<input type="button" id = "selects" value = "+多选">
-					<p>更多选项</p>
+				</div>
+				<div class="navv navs">
+					<p>更多选项<a href="javascript:;"></a></p>
 				</div>
 			</div>
 			<div class="list1">
@@ -112,15 +114,157 @@
 					<li>价格</li>
 					<li>评论</li>
 					<li>
-						<input type="text" name="low" id="low" value="最低价" >-
-						<input type="text" name="high" id="high" value="最高价" >
+						<input type="text" name="low" id="low" value="￥最低价" >&nbsp;&nbsp;-&nbsp; &nbsp;
+						<input type="text" name="high" id="high" value="￥最高价" >
 					</li>
 					<li>经营类型</li>
 					<li>促销活动</li>
-					<li><input type="checkbox" name="boxs">赠品</li>
+					<li><input type="checkbox" name="boxs" id = "boxs">赠品</li>
 				</ul>
 			</div>
 		</article>
+		<div class="shops">
+			<div class="msgg">
+				<a href="shopMsg.html"><img src="../../img/shopList_img/shop.jpg"></a>
+				<p>￥199.00</p>
+				<p>山西钦州黄小米超值特惠组 货号111111</p>
+				<p>
+					<span>央广购物</span>
+					<span>自营</span>
+				</p>
+				<p>
+					<input type="button" value = "加入购物车" id = "btn">
+					<span><span></span>收藏</span>
+					<span><span></span></span>
+				</p>
+				<p>
+					<span>成交量：14笔</span>
+					<span>好评量：<span>100%</span></span>
+					<span>用户评论：0 条</span>
+				</p>
+			</div>
+			<div class="msgg">
+				<a href="shopMsg.html"><img src="../../img/shopList_img/shop.jpg"></a>
+				<p>￥199.00</p>
+				<p>山西钦州黄小米超值特惠组 货号111111</p>
+				<p>
+					<span>央广购物</span>
+					<span>自营</span>
+				</p>
+				<p>
+					<input type="button" value = "加入购物车" id = "btn">
+					<span><span></span>收藏</span>
+					<span><span></span></span>
+				</p>
+				<p>
+					<span>成交量：14笔</span>
+					<span>好评量：<span>100%</span></span>
+					<span>用户评论：0 条</span>
+				</p>
+			</div>
+			<div class="msgg">
+				<a href="shopMsg.html"><img src="../../img/shopList_img/shop.jpg"></a>
+				<p>￥199.00</p>
+				<p>山西钦州黄小米超值特惠组 货号111111</p>
+				<p>
+					<span>央广购物</span>
+					<span>自营</span>
+				</p>
+				<p>
+					<input type="button" value = "加入购物车" id = "btn">
+					<span><span></span>收藏</span>
+					<span><span></span></span>
+				</p>
+				<p>
+					<span>成交量：14笔</span>
+					<span>好评量：<span>100%</span></span>
+					<span>用户评论：0 条</span>
+				</p>
+			</div>
+			<div class="msgg">
+				<a href="shopMsg.html"><img src="../../img/shopList_img/shop.jpg"></a>
+				<p>￥199.00</p>
+				<p>山西钦州黄小米超值特惠组 货号111111</p>
+				<p>
+					<span>央广购物</span>
+					<span>自营</span>
+				</p>
+				<p>
+					<input type="button" value = "加入购物车" id = "btn">
+					<span><span></span>收藏</span>
+					<span><span></span></span>
+				</p>
+				<p>
+					<span>成交量：14笔</span>
+					<span>好评量：<span>100%</span></span>
+					<span>用户评论：0 条</span>
+				</p>
+			</div>
+			<div class="msgg">
+				<a href="shopMsg.html"><img src="../../img/shopList_img/shop.jpg"></a>
+				<p>￥199.00</p>
+				<p>山西钦州黄小米超值特惠组 货号111111</p>
+				<p>
+					<span>央广购物</span>
+					<span>自营</span>
+				</p>
+				<p>
+					<input type="button" value = "加入购物车" id = "btn">
+					<span><span></span>收藏</span>
+					<span><span></span></span>
+				</p>
+				<p>
+					<span>成交量：14笔</span>
+					<span>好评量：<span>100%</span></span>
+					<span>用户评论：0 条</span>
+				</p>
+			</div>
+			<div class="msgg">
+				<a href="shopMsg.html"><img src="../../img/shopList_img/shop.jpg"></a>
+				<p>￥199.00</p>
+				<p>山西钦州黄小米超值特惠组 货号111111</p>
+				<p>
+					<span>央广购物</span>
+					<span>自营</span>
+				</p>
+				<p>
+					<input type="button" value = "加入购物车" id = "btn">
+					<span><span></span>收藏</span>
+					<span><span></span></span>
+				</p>
+				<p>
+					<span>成交量：14笔</span>
+					<span>好评量：<span>100%</span></span>
+					<span>用户评论：0 条</span>
+				</p>
+			</div>
+			<div class="msgg">
+				<a href="shopMsg.html"><img src="../../img/shopList_img/shop.jpg"></a>
+				<p>￥199.00</p>
+				<p>山西钦州黄小米超值特惠组 货号111111</p>
+				<p>
+					<span>央广购物</span>
+					<span>自营</span>
+				</p>
+				<p>
+					<input type="button" value = "加入购物车" id = "btn">
+					<span><span></span>收藏</span>
+					<span><span></span></span>
+				</p>
+				<p>
+					<span>成交量：14笔</span>
+					<span>好评量：<span>100%</span></span>
+					<span>用户评论：0 条</span>
+				</p>
+			</div>
+			<ul>
+				<li><a href="javascript:;">首页</a></li>
+				<li><a href="javascript:;">上一页</a></li>
+				<li><a href="javascript:;">1</a></li>
+				<li><a href="javascript:;">下一页</a></li>
+				<li><a href="javascript:;">尾页</a></li>
+			</ul>
+		</div>
 		<div class="advice">
 			<div class="top">
 				<img src="../../img/index_img/cti.png" >
@@ -225,6 +369,28 @@
 				}
 				var type = GetQueryString("type");
 				$("#type").html(decodeURI(type));
+				var oLis = $("#ul3").children();
+				var arr = ["颜值方","战场蘑菇","方家铺子","越品析","金立"];
+				for(let i = 0;i < oLis.length;i ++){
+					$(oLis[i]).mouseenter(function(){
+						$($(this).children()[0]).css("border","1px solid orange");
+						$($(this).children()[0]).html("" + arr[i]);
+					})
+					$(oLis[i]).mouseleave(function(){
+						$($(this).children()[0]).css("border","1px solid #e6e6e6");
+						$($(this).children()[0]).html("<img src='../../img/index_img/logo24.jpg' >")
+					})
+				}
+				var msggs = $(".msgg");
+				for(let i = 0;i < msggs.length;i ++){
+					$(msggs[i]).mouseenter(function(){
+						$(this).css("border","1px solid orange");
+						
+					})
+					$(msggs[i]).mouseleave(function(){
+						$(this).css("border","1px solid #e8e8e8");
+					})
+				}
 			})
 		</script>
 	</body>
