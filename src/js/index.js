@@ -8,18 +8,21 @@ require.config({
 		"sample" : "sample",
 		"login" : "login",
 		"cookies" : "cookie",
-		"registor" : "registor"
+		"registor" : "registor",
+		"slide1" : "slide1"
 	}
 })
 
 //导入
-require(['jquery','cookie',"slide","nav","sample","login","cookies","registor"],function($,cookie,slide,nav,sample,login,cookies,registor){
+require(['jquery','cookie',"slide","nav","sample","login","cookies","registor","slide1"],function($,cookie,slide,nav,sample,login,cookies,registor,slide1){
 	$(function(){
 		let section = $("div.banner").children()[0];
-		// slide(section);
+		let sections = $("#ps");
+// 		slide(section);
+		// slide1(sections);
+		// slide1($("#ps1"));
 		nav.nav("ul");
 		sample.sample("sample");
-		console.log(1);
 		registor.registor();
 		if(login){
 			location.href = "../html/index.html";
