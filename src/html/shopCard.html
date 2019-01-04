@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>购物车</title>
+		<script src="../js/require.js" data-main = "../js/index" defer async = "true"></script>
+		<link href="../../dist/css/shopCard.min.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<div class="header">	
+				<ul>
+					<li><a href="login.html">您好,请登录</a></li>
+					<li><a href="registor.html">免费注册</a></li>
+					<li><a href="javascript:;">我的订单<img src="../../img/index_img/select.png" ></a></li>
+					<li><a href="javascript:;">我的收藏<img src="../../img/index_img/select.png" ></a></li>
+					<li><a href="javascript:;">客户服务<img src="../../img/index_img/select.png" ></a></li>
+					<li><a href="javascript:;"><img src="../../img/index_img/on2.png" >成为供应商</a></li>
+				</ul>
+			</div>
+		</header>
+		<article>
+			<div class="fond">
+				<div class="fonds">
+					<img src="../../img/index_img/logo1.png" >
+				</div>
+			</div>
+			<div>
+				<div>
+					<p>我的购物车</p>
+					<p>查看购物车中所添加的商品：增加减少数量，并勾选确认想要购买的商品进入下一步操作</p>
+				</div>
+				<div>
+					<p>购物车:</p>
+					<p><span id = "red"></span></p>
+					<p><span id = "bus">1</span>/100</p>
+				</div>
+			</div>
+			<div class="selec">
+				<p><input type="checkbox" name="selectors" id="selector11" value="" />全选</p>
+				<p>商品</p>
+				<p>数量</p>
+				<p>单价（元）</p>
+				<p>优惠</p>
+				<p>金额（元）</p>
+			</div>
+			<!-- <div class="selec1"> -->
+				<!-- <p><input type="checkbox" name="selector" id="selector1" value="" /></p>
+				<p>
+					<img src="../../img/shopCard_img/shop.jpg" >
+				</p>
+				<p>山西汾州小米特惠组 货号122358</p>
+				<p>
+					<input type="button" name="reduce" id="reduce" value="-" /><input type="button" name="nums" id="num" value="1" /><input type="button" name="add" id="add" value="+" />
+				</p>
+				<p>199.00</p>
+				<p></p>
+				<p>398.00 <span></span></p> -->
+			<!-- </div> -->
+			<div class="selec2">
+				<p><input type="checkbox" name="selectors" id="selector2" value="" />全选</p>
+				<p><input type="button" name="delete" id="delete" value="删除" /></p>
+				<p>选择商品种类 <span id = "n">1</span> 种</p>
+				<p>选购商品总量 <span id = "m">2</span> 件</p>
+				<p>商品金额总计（不含运费）:<span id="money">399.00</span>元</p>
+				<p><input type="button" name="set" id="set" value="结算" /></p>
+			</div>
+		</article>
+		<footer>
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">招商合作</a></li>
+				<li><a href="#">招商合作</a></li>
+				<li><a href="#">招商合作</a></li>
+				<li><a href="#">招商合作</a></li>
+				<li><a href="#">招商合作</a></li>
+			</ul>
+			<ul>
+				<li><a href="#"><img src="../../img/index_img/gh.png" >京公安网备：111010101010101</a></li>
+				<li><a href="#">招商合作</a></li>
+				<li><a href="#">招商合作</a></li>
+				<li><a href="#">招商合作</a></li>
+				<li><a href="#">招商合作</a></li>
+				<li><a href="#">招商合作</a></li>
+				<li><a href="#">招商合作</a></li>
+			</ul>
+			<ul>
+				<li>Copyright @ 2010-2017</li>
+				<li>cnrmall.com</li>
+				<li>All</li>
+				<li>Rights</li>
+				<li>Reserved</li>
+				<li>服务热线：4008-518-518</li>
+			</ul>
+			<ul>
+				<li><img src="../../img/index_img/cert.png" ></li>
+				<li><img src="../../img/index_img/cnnic.png" ></li>
+				<li><img src="../../img/index_img/cnnic.png" ></li>
+				<li><img src="../../img/index_img/cert.png" ></li>
+			</ul>
+		</footer>
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#selector11').on('click',function(){
+					if(this.checked) {
+						$("input[name='selector']").attr('checked',true);
+					}else {
+						$("input[name='selector']").attr('checked',false);
+					}
+				})
+				$('#selector2').on('click',function(){
+					if(this.checked) {
+						$("input[name='selector']").attr('checked',true);
+					}else {
+						$("input[name='selector']").attr('checked',false);
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

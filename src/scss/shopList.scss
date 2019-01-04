@@ -6,6 +6,65 @@ header{
 	background: #f6f6f6;
 	border-bottom: 1px solid #e5e5e5;
 }
+.side{
+	position: fixed;
+	right: 0;
+	top: 50%;
+	margin-top: -70px;
+	& ul{
+		& li{
+			width: 35px;
+			height: 35px;
+			background: url("../../img/shopList_img/toolbar_bg.png") no-repeat #483E39;
+			margin-bottom: 1px;
+			border-radius: 4px;
+		}
+		& li:nth-child(1){
+			background-position: 0px 0;
+		}
+		& li:nth-child(2){
+			background-position: 0px -50px;
+			position: relative;
+			& span{
+				position: absolute;
+				display: block;
+				height: 15px;
+				width: 15px;
+				background: orange;
+				border-radius: 15px;
+				left: 22px;
+				top: -7px;
+				font-size: 12px;
+				display: none;
+				text-align: center;
+			}
+		}
+		& li:nth-child(3){
+			background-position: 0px -100px;
+		}
+		& li:nth-child(4){
+			background-position: 0px -150px;
+		}
+		& li:nth-child(5){
+			background-position: 0px -200px;
+		}
+		& li:nth-child(1):hover{
+			background: url("../../img/shopList_img/toolbar_bg.png") no-repeat 0px 0 orange;
+		}
+		& li:nth-child(2):hover{
+			background: url("../../img/shopList_img/toolbar_bg.png") no-repeat 0px -50px orange;
+		}
+		& li:nth-child(3):hover{
+			background: url("../../img/shopList_img/toolbar_bg.png") no-repeat 0px -100px orange;
+		}
+		& li:nth-child(4):hover{
+			background: url("../../img/shopList_img/toolbar_bg.png") no-repeat 0px -150px orange;
+		}
+		& li:nth-child(5):hover{
+			background: url("../../img/shopList_img/toolbar_bg.png") no-repeat 0px -200px orange;
+		}
+	}
+}
 .header{
 	width: $baseWidth;
 	height: 40px;
@@ -454,8 +513,11 @@ article{
 		}
 		& p:nth-child(2){
 			color: #ff5837;
-			font-size: 16px;
+			font-size: 12px;
 			text-align: left;
+			& span{
+				font-size: 16px;
+			}
 		}
 		& p:nth-child(3){
 			color: #333333;

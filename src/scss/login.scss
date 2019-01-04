@@ -111,7 +111,8 @@ article{
 				margin-left: 20px;
 			}
 			& input{
-				border: 0;
+				border: none;
+				outline: none;
 				text-indent: 40px;
 				height: 50px;
 			}
@@ -119,16 +120,27 @@ article{
 		& div:nth-child(4){
 			border-bottom: 1px solid #e6e6e6;
 			position: relative;
-			& span{
+			& #code1{
 				display: block;
 				width: 120px;
 				height: 50px;
 				border: 1px solid #e6e6e6;
 				position: absolute;
-				left: 227px;
+				left: 229px;
 				background: #eeeeee;
 				line-height: 50px;
 				text-align: center;
+				text-indent: 0;
+			}
+			& #codes1{
+				display: block;
+				width: 120px;
+				height: 50px;
+				position: absolute;
+				left: 349px;
+				line-height: 50px;
+				text-align: center;
+				text-indent: 0;
 			}
 		}
 		& div:nth-child(5){
@@ -152,11 +164,13 @@ article{
 		& div:nth-child(6){
 			border: 0;
 			height: 40px;
-			& a{
+			& #login{
 				width: 348px;
 				height: 40px;
 				background: #ff500b;
 				border-radius: 3px;
+				margin: 0;
+				display: block;
 				font-size: 14px;
 				color: white;
 				line-height: 40px;

@@ -3,10 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<title>商品列表</title>
-		<script src="../js/require.js" data-main = "../require/index" defer async = "true"></script>
+		<script src="../js/require.js" data-main = "../js/index" defer async = "true"></script>
 		<link href="../../dist/css/shopList.min.css" rel="stylesheet" />
 	</head>
 	<body>
+		<div class="side" id = "side">
+			<ul>
+				<li></li>
+				<li id = "lii"><span></span></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
 		<header>
 			<div class="header">
 				<ul>
@@ -42,7 +51,7 @@
 					</div>
 					<div class="fond-right">
 						<p><img src="../../img/index_img/logo_03.jpg" ><a href="javascript:;">我的商场</a><a href="javascript:;">></a></p>
-						<p><img src="../../img/index_img/logo_05.jpg" ><a href="javascript:;">购物车结算</a><a href="javascript:;">></a></p>
+						<p><img src="../../img/index_img/logo_05.jpg" ><a href="shopCard.html">购物车结算</a><a href="javascript:;">></a></p>
 					</div>
 				</div>
 				<div class="fond2">
@@ -61,11 +70,11 @@
 				<div>
 					<span>品牌：</span>
 					<ul id="ul3">
-						<li><a href="#"><img src="../../img/shopList_img/logo.jpg" ></a></li>
+						<li><a href="#"><img src="../../img/shopList_img/logo0.jpg" ></a></li>
 						<li><a href="#"><img src="../../img/shopList_img/logo1.jpg" ></a></li>
 						<li><a href="#"><img src="../../img/shopList_img/logo2.jpg" ></a></li>
 						<li><a href="#"><img src="../../img/shopList_img/logo3.jpg" ></a></li>
-						<li><a href="#"><img src="../../img/index_img/logo24.jpg" ></a></li>
+						<li><a href="#"><img src="../../img/shopList_img/logo4.jpg" ></a></li>
 					</ul>
 					<input type="button" id = "selects" value = "+多选">
 				</div>
@@ -125,15 +134,15 @@
 		</article>
 		<div class="shops">
 			<div class="msgg">
-				<a href="shopMsg.html"><img src="../../img/shopList_img/shop.jpg"></a>
-				<p>￥199.00</p>
-				<p>山西钦州黄小米超值特惠组 货号111111</p>
+				<a href="shopMsg.html?id=1" shop-id = "1"><img src="../../img/shopList_img/shop1.jpg"></a>
+				<p class="price">￥<span>199.00</span></p>
+				<p class="msga">山西钦州黄小米超值特惠组 货号111111</p>
 				<p>
 					<span>央广购物</span>
 					<span>自营</span>
 				</p>
 				<p>
-					<input type="button" value = "加入购物车" id = "btn">
+					<input type="button" value = "加入购物车" id = "btn" class="btn">
 					<span><span></span>收藏</span>
 					<span><span></span></span>
 				</p>
@@ -144,15 +153,15 @@
 				</p>
 			</div>
 			<div class="msgg">
-				<a href="shopMsg.html"><img src="../../img/shopList_img/shop.jpg"></a>
-				<p>￥199.00</p>
-				<p>山西钦州黄小米超值特惠组 货号111111</p>
+				<a href="shopMsg.html?id=2" shop-id = "2"><img src="../../img/shopList_img/shop2.jpg"></a>
+				<p class="price">￥<span>299.00</span></p>
+				<p class="msga">山西钦州黄小米超值特惠组 货号111111</p>
 				<p>
 					<span>央广购物</span>
 					<span>自营</span>
 				</p>
 				<p>
-					<input type="button" value = "加入购物车" id = "btn">
+					<input type="button" value = "加入购物车" id = "btn" class="btn">
 					<span><span></span>收藏</span>
 					<span><span></span></span>
 				</p>
@@ -163,15 +172,15 @@
 				</p>
 			</div>
 			<div class="msgg">
-				<a href="shopMsg.html"><img src="../../img/shopList_img/shop.jpg"></a>
-				<p>￥199.00</p>
-				<p>山西钦州黄小米超值特惠组 货号111111</p>
+				<a href="shopMsg.html?id=3" shop-id = "3"><img src="../../img/shopList_img/shop3.jpg"></a>
+				<p class="price">￥<span>119.00</span></p>
+				<p class="msga">山西钦州黄小米超值特惠组 货号111111</p>
 				<p>
 					<span>央广购物</span>
 					<span>自营</span>
 				</p>
 				<p>
-					<input type="button" value = "加入购物车" id = "btn">
+					<input type="button" value = "加入购物车" id = "btn" class="btn">
 					<span><span></span>收藏</span>
 					<span><span></span></span>
 				</p>
@@ -182,15 +191,15 @@
 				</p>
 			</div>
 			<div class="msgg">
-				<a href="shopMsg.html"><img src="../../img/shopList_img/shop.jpg"></a>
-				<p>￥199.00</p>
-				<p>山西钦州黄小米超值特惠组 货号111111</p>
+				<a href="shopMsg.html?id=4"  shop-id = "4"><img src="../../img/shopList_img/shop4.jpg"></a>
+				<p class="price">￥<span>159.00</span></p>
+				<p class="msga">山西钦州黄小米超值特惠组 货号111111</p>
 				<p>
 					<span>央广购物</span>
 					<span>自营</span>
 				</p>
 				<p>
-					<input type="button" value = "加入购物车" id = "btn">
+					<input type="button" value = "加入购物车" id = "btn" class="btn">
 					<span><span></span>收藏</span>
 					<span><span></span></span>
 				</p>
@@ -201,15 +210,15 @@
 				</p>
 			</div>
 			<div class="msgg">
-				<a href="shopMsg.html"><img src="../../img/shopList_img/shop.jpg"></a>
-				<p>￥199.00</p>
-				<p>山西钦州黄小米超值特惠组 货号111111</p>
+				<a href="shopMsg.html?id=5" shop-id = "5"><img src="../../img/shopList_img/shop5.jpg"></a>
+				<p class="price">￥<span>399.00</span></p>
+				<p class="msga">山西钦州黄小米超值特惠组 货号111111</p>
 				<p>
 					<span>央广购物</span>
 					<span>自营</span>
 				</p>
 				<p>
-					<input type="button" value = "加入购物车" id = "btn">
+					<input type="button" value = "加入购物车" id = "btn" class="btn">
 					<span><span></span>收藏</span>
 					<span><span></span></span>
 				</p>
@@ -220,15 +229,15 @@
 				</p>
 			</div>
 			<div class="msgg">
-				<a href="shopMsg.html"><img src="../../img/shopList_img/shop.jpg"></a>
-				<p>￥199.00</p>
-				<p>山西钦州黄小米超值特惠组 货号111111</p>
+				<a href="shopMsg.html?id=6"  shop-id = "6"><img src="../../img/shopList_img/shop6.jpg"></a>
+				<p class="price">￥<span>499.00</span></p>
+				<p class="msga">山西钦州黄小米超值特惠组 货号111111</p>
 				<p>
 					<span>央广购物</span>
 					<span>自营</span>
 				</p>
 				<p>
-					<input type="button" value = "加入购物车" id = "btn">
+					<input type="button" value = "加入购物车" id = "btn" class="btn">
 					<span><span></span>收藏</span>
 					<span><span></span></span>
 				</p>
@@ -239,15 +248,15 @@
 				</p>
 			</div>
 			<div class="msgg">
-				<a href="shopMsg.html"><img src="../../img/shopList_img/shop.jpg"></a>
-				<p>￥199.00</p>
-				<p>山西钦州黄小米超值特惠组 货号111111</p>
+				<a href="shopMsg.html?id=7"  shop-id = "7"><img src="../../img/shopList_img/shop7.jpg"></a>
+				<p class="price">￥<span>177.00</span></p>
+				<p class="msga">山西钦州黄小米超值特惠组 货号111111</p>
 				<p>
 					<span>央广购物</span>
 					<span>自营</span>
 				</p>
 				<p>
-					<input type="button" value = "加入购物车" id = "btn">
+					<input type="button" value = "加入购物车" id = "btn" class="btn">
 					<span><span></span>收藏</span>
 					<span><span></span></span>
 				</p>
@@ -378,7 +387,7 @@
 					})
 					$(oLis[i]).mouseleave(function(){
 						$($(this).children()[0]).css("border","1px solid #e6e6e6");
-						$($(this).children()[0]).html("<img src='../../img/index_img/logo24.jpg' >")
+						$($(this).children()[0]).html("<img src='../../img/shopList_img/logo"+i+".jpg' >")
 					})
 				}
 				var msggs = $(".msgg");

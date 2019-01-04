@@ -10,8 +10,8 @@
 		<header>
 			<div class="header">
 				<ul>
-					<li><a href="login.html">您好,请登录</a></li>
-					<li><a href="registor.html">免费注册</a></li>
+					<li><a href="login.html" id = "user">您好,请登录</a></li>
+					<li><a href="registor.html" id = "users">免费注册</a></li>
 					<li><a href="javascript:;">我的订单<img src="../../img/index_img/select.png" ></a></li>
 					<li><a href="javascript:;">我的收藏<img src="../../img/index_img/select.png" ></a></li>
 					<li><a href="javascript:;">客户服务<img src="../../img/index_img/select.png" ></a></li>
@@ -42,7 +42,7 @@
 					</div>
 					<div class="fond-right">
 						<p><img src="../../img/index_img/logo_03.jpg" ><a href="javascript:;">我的商场</a><a href="javascript:;">></a></p>
-						<p><img src="../../img/index_img/logo_05.jpg" ><a href="javascript:;">购物车结算</a><a href="javascript:;">></a></p>
+						<p><img src="../../img/index_img/logo_05.jpg" ><a href="shopCard.html">购物车结算</a><a href="javascript:;">></a></p>
 					</div>
 				</div>
 				<div class="fond2">
@@ -652,7 +652,19 @@
 		</footer>
 		<script src="../js/jquery-1.11.3.js"></script>
 		<script>
-			
+			$(function(){
+				function GetQueryString(name){
+				     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+				     var r = window.location.search.substr(1).match(reg);
+				     if(r!=null)return  unescape(r[2]); return null;
+				}
+				var user = GetQueryString("user");
+				$("#user").html(decodeURI(user));
+				$("#user").css("color","red")
+				$("#users").html("欢迎光临央广购物<a href='login.html'>[退出]</a>");
+				$("#users").css("color","gray")
+				$("#users a").css("color","gray")
+			})
 		</script>
 	</body>
 </html>

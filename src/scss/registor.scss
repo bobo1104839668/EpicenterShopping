@@ -69,6 +69,7 @@ article{
 				align-items: center;
 				border-radius: 0;
 				padding: 0;
+				position: relative;
 				& label{
 					display: block;
 					height: 50px;
@@ -76,15 +77,28 @@ article{
 					margin-left: 20px;
 				}
 				& input{
-					border: 0;
+					border: none;
+					outline: none;
 					text-indent: 40px;
 					height: 50px;
+				}
+				& .spans{
+					display: block;
+					position: absolute;
+					width: 150px;
+					height: 51px;
+					left: 400px;
+					top: 0;
+					line-height: 51px;
+					color: red;
+					font-size: 12px;
+					text-indent: 10px;
 				}
 			}
 			& div:nth-child(4){
 				border-bottom: 1px solid #e6e6e6;
 				position: relative;
-				& span{
+				& #code{
 					display: block;
 					width: 120px;
 					height: 50px;
@@ -94,6 +108,7 @@ article{
 					background: #eeeeee;
 					line-height: 50px;
 					text-align: center;
+					text-indent: 0;
 				}
 			}
 			& div:nth-child(5){
@@ -124,6 +139,7 @@ article{
 					border-radius: 3px;
 					font-size: 14px;
 					color: white;
+					text-indent: 0;
 					line-height: 40px;
 					text-align: center;
 					font-weight: 600;

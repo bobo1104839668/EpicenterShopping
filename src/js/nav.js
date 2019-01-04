@@ -14,7 +14,6 @@ define(function(){
 	}
 	return {
 		nav : function(id){
-			getData(0);
 			let oLis = $("#" + id).children();
 			for(let i=0;i < oLis.length;i ++){
 				$(oLis[i]).mouseenter(function(){

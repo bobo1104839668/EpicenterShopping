@@ -18,14 +18,15 @@
 				<section>
 					<p class="ps">手机注册</p>
 					<div>
-						<label>账&nbsp;&nbsp;&nbsp;号：</label><input type="text" name="username" id="username" value="" placeholder="手机号/会员名/邮箱"/>
+						<label>账&nbsp;&nbsp;&nbsp;号：</label><input type="text" name="username" id="username" value="" placeholder="手机号/会员名/邮箱"/><span class="spans" id = "names"></span>
 					</div>
 					<div>
-						<label>密&nbsp;&nbsp;&nbsp;码：</label><input type="text" name="password" id="password" value="" placeholder="输入账户密码"/>
+						<label>密&nbsp;&nbsp;&nbsp;码：</label><input type="text" name="password" id="password" value="" placeholder="输入账户密码"/><span class="spans" id = "pwds"></span>
 					</div>
 					<div>
-						<label>验证码：</label><input type="text" name="code" id="code" value="" placeholder="输入验证码"/>
-						<span>3875</span>
+						<label>验证码：</label><input type="text" name="code" id="codess" placeholder="输入验证码"/>
+						<input type="button" name="code" id="code" value="3875" />
+						<span class="spans" id = "codes"></span>
 					</div>
 					<div>
 						<p>
@@ -82,7 +83,5 @@
 				<li><img src="../../img/index_img/cert.png" ></li>
 			</ul>
 		</footer>
-		<script src="../js/require.js" data-main = "../require/index" defer async = "true"></script>
-		<script src="js/jquery-1.11.3.js"></script>
 	</body>
 </html>
